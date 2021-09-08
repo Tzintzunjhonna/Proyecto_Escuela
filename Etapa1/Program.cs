@@ -1,4 +1,5 @@
 ﻿using System;
+using CoreEscuela.Entidades;
 
 namespace Etapa1
 {
@@ -6,7 +7,10 @@ namespace Etapa1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var escuela = new Escuela("Contreras Academy", 2021);
+            escuela.Pais = "Mexico";
+            escuela.Ciudad = "Tlaxcala";
+            Console.WriteLine(escuela.Nombre);
         }
     }
 }
