@@ -23,10 +23,14 @@ namespace CoreEscuela.Entidades
 
         public string Ciudad { get; set; }
 
-        private int myVar;
+        public TiposEscuela TiposEscuela { get; set; }
 
         /*Constructor*/
 
         public Escuela(string nombre, int año) => (Nombre, AñoDeCreacion) = (nombre, año);
+
+        public override string ToString(){
+            return $"Nombre: {Nombre}\n Tipo: {TiposEscuela}\n Pais: {Pais}\n Ciudad: {Ciudad}";
+        }
     }
 }

@@ -10,7 +10,8 @@ namespace Etapa1
             var escuela = new Escuela("Contreras Academy", 2021);
             escuela.Pais = "Mexico";
             escuela.Ciudad = "Tlaxcala";
-            Console.WriteLine(escuela.Nombre);
+            escuela.TiposEscuela = TiposEscuela.Primaria;
+            Console.WriteLine (escuela);
         }
     }
 }
