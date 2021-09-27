@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CoreEscuela;
 using CoreEscuela.Entidades;
+using CoreEscuela.Util;
 
 using static System.Console;
 
@@ -14,15 +15,14 @@ namespace Etapa1
             var engine = new EscuelaEngine();
             engine.Inicializar();
 
-            WriteLine("==========================");
+            Printer.DibujarTitulo("Bienvenidos a la escuela"); // Estamos Imprimiendo un metodo de printer.cs
+            Printer.Beep(10000, cantidad: 10); // Lanzamos un pitido (sonido) desde printer.cs
             ImprimirCursosEscuela(engine.Escuela);
         }
 
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
-            WriteLine("\n *************");
-            WriteLine("\n Cursos de la escuela");
-            WriteLine("\n *************");
+            Printer.DibujarTitulo("Cursos escuela");
 
             /*  Realizamos un condicional if para checar si hay escuela o cursos dentro de la escuela
                 escuela? el signo de interrogacion es para ver si escuela esta vacia
