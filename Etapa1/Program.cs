@@ -48,11 +48,25 @@ namespace Etapa1
                     { Nombre = "401", Jornada = Tiposjornada.Mañana },
                     new Curso()
                     { Nombre = "501", Jornada = Tiposjornada.Mañana },
-                    new Curso() { Nombre = "502", Jornada = Tiposjornada.Tarde }
+                    new Curso() { Nombre = "501", Jornada = Tiposjornada.Tarde }
                 };
 
-            otraColeccion.Clear(); // Limpiar toda lista creada anteriormente!
             escuela.Cursos.AddRange (otraColeccion); // Añadir cursos a una lista de cursos creada anteriormente
+            ImprimirCursosEscuela (escuela);
+
+            // Es un metodo para poder borrar con expresion regular o delegado
+            escuela
+                .Cursos
+                .RemoveAll(delegate (Curso cur)
+                {
+                    return cur.Nombre == "301";
+                });
+
+            // Es un metodo para borrar llamado Lambda
+            escuela
+                .Cursos
+                .RemoveAll((cur) =>
+                    cur.Nombre == "501" && cur.Jornada == Tiposjornada.Mañana);
 
             /*Se hace una lista / arreglo con los cursos para llamar desde atributo Escuela.cs*/
             /*escuela.Cursos = null; <-- Es una prueba para checar si escuela o cursos estan vacios y resolver*/
