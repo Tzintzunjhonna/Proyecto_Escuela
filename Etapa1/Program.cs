@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CoreEscuela;
 using CoreEscuela.Entidades;
 
 using static System.Console;
@@ -10,70 +11,13 @@ namespace Etapa1
     {
         static void Main(string[] args)
         {
-            var escuela =
-                new Escuela("Contreras Academy",
-                    2021,
-                    TiposEscuela.Primaria,
-                    pais: "Mexico",
-                    ciudad: "Tlaxcala");
+            var engine = new EscuelaEngine();
+            engine.Inicializar();
 
-            // Añadir los cursos a una lista
-            // Agregar a espacio de nombres la lista
-            escuela.Cursos =
-                new List<Curso>()
-                {
-                    new Curso()
-                    { Nombre = "101", Jornada = Tiposjornada.Tarde },
-                    new Curso()
-                    { Nombre = "201", Jornada = Tiposjornada.Tarde },
-                    new Curso() { Nombre = "301", Jornada = Tiposjornada.Tarde }
-                };
-
-            // Agregar un nuevo curso a la lista existente de cursos
-            escuela
-                .Cursos
-                .Add(new Curso()
-                { Nombre = "102", Jornada = Tiposjornada.Tarde });
-
-            escuela
-                .Cursos
-                .Add(new Curso()
-                { Nombre = "202", Jornada = Tiposjornada.Tarde });
-
-            // Añadir varios cursos a la lista de curso existente
-            var otraColeccion =
-                new List<Curso>()
-                {
-                    new Curso()
-                    { Nombre = "401", Jornada = Tiposjornada.Mañana },
-                    new Curso()
-                    { Nombre = "501", Jornada = Tiposjornada.Mañana },
-                    new Curso() { Nombre = "501", Jornada = Tiposjornada.Tarde }
-                };
-
-            escuela.Cursos.AddRange (otraColeccion); // Añadir cursos a una lista de cursos creada anteriormente
-            ImprimirCursosEscuela (escuela);
-
-            // Es un metodo para poder borrar con expresion regular o delegado
-            escuela
-                .Cursos
-                .RemoveAll(delegate (Curso cur)
-                {
-                    return cur.Nombre == "301";
-                });
-
-            // Es un metodo para borrar llamado Lambda
-            escuela
-                .Cursos
-                .RemoveAll((cur) =>
-                    cur.Nombre == "501" && cur.Jornada == Tiposjornada.Mañana);
-
-            /*Se hace una lista / arreglo con los cursos para llamar desde atributo Escuela.cs*/
-            /*escuela.Cursos = null; <-- Es una prueba para checar si escuela o cursos estan vacios y resolver*/
-            ImprimirCursosEscuela (escuela);
+            WriteLine("==========================");
+            ImprimirCursosEscuela(engine.Escuela);
         }
 
-        /* Metodo para imrpimir mas eficaz Los cursos de la escuela*/
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
             WriteLine("\n *************");
@@ -92,7 +36,7 @@ namespace Etapa1
                 {
                     Console
                         .WriteLine($@"Nombre {curso.Nombre}, Id {
-                            curso.UniqueId}");
+                            curso.UniqueId}, Jornada {curso.Jornada}");
                 }
             }
         }
