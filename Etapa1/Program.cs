@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreEscuela.Entidades;
 
 using static System.Console;
@@ -16,14 +17,44 @@ namespace Etapa1
                     pais: "Mexico",
                     ciudad: "Tlaxcala");
 
-            /*Se hace una lista / arreglo con los cursos para llamar desde atributo Escuela.cs*/
+            // Añadir los cursos a una lista
+            // Agregar a espacio de nombres la lista
             escuela.Cursos =
-                new Curso[] {
-                    new Curso() { Nombre = "101" },
-                    new Curso() { Nombre = "201" },
-                    new Curso() { Nombre = "301" }
+                new List<Curso>()
+                {
+                    new Curso()
+                    { Nombre = "101", Jornada = Tiposjornada.Tarde },
+                    new Curso()
+                    { Nombre = "201", Jornada = Tiposjornada.Tarde },
+                    new Curso() { Nombre = "301", Jornada = Tiposjornada.Tarde }
                 };
 
+            // Agregar un nuevo curso a la lista existente de cursos
+            escuela
+                .Cursos
+                .Add(new Curso()
+                { Nombre = "102", Jornada = Tiposjornada.Tarde });
+
+            escuela
+                .Cursos
+                .Add(new Curso()
+                { Nombre = "202", Jornada = Tiposjornada.Tarde });
+
+            // Añadir varios cursos a la lista de curso existente
+            var otraColeccion =
+                new List<Curso>()
+                {
+                    new Curso()
+                    { Nombre = "401", Jornada = Tiposjornada.Mañana },
+                    new Curso()
+                    { Nombre = "501", Jornada = Tiposjornada.Mañana },
+                    new Curso() { Nombre = "502", Jornada = Tiposjornada.Tarde }
+                };
+
+            otraColeccion.Clear(); // Limpiar toda lista creada anteriormente!
+            escuela.Cursos.AddRange (otraColeccion); // Añadir cursos a una lista de cursos creada anteriormente
+
+            /*Se hace una lista / arreglo con los cursos para llamar desde atributo Escuela.cs*/
             /*escuela.Cursos = null; <-- Es una prueba para checar si escuela o cursos estan vacios y resolver*/
             ImprimirCursosEscuela (escuela);
         }

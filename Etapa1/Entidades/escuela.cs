@@ -1,4 +1,6 @@
 /*Espacio de nombres*/
+using System.Collections.Generic;
+
 namespace CoreEscuela.Entidades
 {
     class Escuela
@@ -27,7 +29,9 @@ namespace CoreEscuela.Entidades
 
         /* Atributo de cursos array */
 
-        public Curso[] Cursos { get; set; }
+        // Colocar arreglo para una lista de cursos 
+        //con su espacio de nombres using System.Collections.Generic;
+        public List<Curso> Cursos { get; set; }
 
         /*Constructor*/
 
