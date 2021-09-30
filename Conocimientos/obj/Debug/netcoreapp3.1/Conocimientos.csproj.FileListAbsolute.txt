@@ -1,0 +1,13 @@
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.exe
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.deps.json
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.runtimeconfig.json
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.runtimeconfig.dev.json
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.dll
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.pdb
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.csprojAssemblyReference.cache
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.AssemblyInfoInputs.cache
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.AssemblyInfo.cs
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.csproj.CoreCompileInputs.cache
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.dll
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.pdb
+C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.genruntimeconfig.cache
