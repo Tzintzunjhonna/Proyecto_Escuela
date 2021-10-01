@@ -1,5 +1,6 @@
 using System;
 
+
 namespace CoreGym.Entidades
 {
     public class Costos { 
@@ -12,13 +13,16 @@ namespace CoreGym.Entidades
 
         public Area Area { get; set; }
 
-        public int Nota { get; set; }
+        public int Precio { get; set; }
 
         public string Nombre { get; set; }
 
         public override string ToString()
         {
-            return $"{Nota}, {Cliente.Nombre}, {Area.Nombre}";
+           
+            return $"{Precio}, {Cliente.Nombre}, {Area.Nombre}";
+
+           
         }
 
     }

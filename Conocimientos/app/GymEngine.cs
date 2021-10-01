@@ -41,23 +41,33 @@ namespace Conocimientos
                                 new Costos {
                                     Area = area,
                                     Nombre = $"{area.Nombre} Ev#{i + 1}",
-                                    Nota = (int)(rmd.Next(50, 300)),
-                                    Cliente = cliente
+                                    Cliente = cliente,
+                                    Precio = (int)(rmd.Next(50, 350))
                                 };
 
                             cliente.Costos.Add (ev);
+
+                            var turno = suscripcion.Nombre;
+
+                            if (turno == "Mañana")
+                            {
+                                ev.Precio = (int)(rmd.Next(50, 100));
+                            }
+                            else if (turno == "Tarde")
+                            {
+                                ev.Precio = (int)(rmd.Next(101, 200));
+                            }
+                            else if (turno == "Noche")
+                            {
+                                ev.Precio = (int)(rmd.Next(201, 350));
+                            }
                             System
                                 .Console
                                 .WriteLine($@"Nombre cliente: {
                                     cliente.Nombre} Area: {
-                                    area.Nombre} Costo: $${ev.Nota}, Turno: {
+                                    area.Nombre} Costo: $$ {ev.Precio}, Turno: {
                                     suscripcion.Nombre}");
                         }
-
-                        /*System
-                            .Console
-                            .WriteLine($@"Evaluaciones de la Asignatura de {
-                                alumno.Nombre}");*/
                     }
                 }
             }
@@ -142,7 +152,7 @@ namespace Conocimientos
 
             foreach (var c in Gym.Suscripciones)
             {
-                int cantidadRandom = rnd.Next(2);
+                int cantidadRandom = rnd.Next(3);
                 c.Cliente = GenerarClientesAlAzar(cantidadRandom);
             }
         }
