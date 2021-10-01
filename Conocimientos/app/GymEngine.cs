@@ -41,8 +41,7 @@ namespace Conocimientos
                                 new Costos {
                                     Area = area,
                                     Nombre = $"{area.Nombre} Ev#{i + 1}",
-                                    Cliente = cliente,
-                                    Precio = (int)(rmd.Next(50, 350))
+                                    Cliente = cliente
                                 };
 
                             cliente.Costos.Add (ev);
