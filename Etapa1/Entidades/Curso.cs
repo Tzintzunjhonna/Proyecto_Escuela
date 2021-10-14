@@ -10,7 +10,7 @@ namespace CoreEscuela.Entidades
         public Tiposjornada Jornada { get; set;}
 
         public List<Asignatura> Asignaturas { get; set;}
-        public List<Alumnos> Alumno { get; set;}
+        public List<Alumno> Alumnos { get; set;}
 
         public Curso() => UniqueId = Guid.NewGuid().ToString();
     }  

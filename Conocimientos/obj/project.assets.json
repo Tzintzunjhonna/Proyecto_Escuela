@@ -13,23 +13,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jjctj\\Desktop\\.Net\\Proyecto.net\\Conocimientos\\Conocimientos.csproj",
+      "projectUniqueName": "C:\\Users\\jjctj\\Desktop\\.Net\\Proyecto_Escuela\\Conocimientos\\Conocimientos.csproj",
       "projectName": "Conocimientos",
-      "projectPath": "C:\\Users\\jjctj\\Desktop\\.Net\\Proyecto.net\\Conocimientos\\Conocimientos.csproj",
+      "projectPath": "C:\\Users\\jjctj\\Desktop\\.Net\\Proyecto_Escuela\\Conocimientos\\Conocimientos.csproj",
       "packagesPath": "C:\\Users\\jjctj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jjctj\\Desktop\\.Net\\Proyecto.net\\Conocimientos\\obj\\",
+      "outputPath": "C:\\Users\\jjctj\\Desktop\\.Net\\Proyecto_Escuela\\Conocimientos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jjctj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jjctj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -41,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -56,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

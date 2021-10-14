@@ -11,3 +11,17 @@ C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\C
 C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.dll
 C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.pdb
 C:\Users\jjctj\Desktop\.Net\Proyecto.net\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.genruntimeconfig.cache
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.exe
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.deps.json
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.runtimeconfig.json
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.runtimeconfig.dev.json
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.dll
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\bin\Debug\netcoreapp3.1\Conocimientos.pdb
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.csproj.AssemblyReference.cache
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.AssemblyInfoInputs.cache
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.AssemblyInfo.cs
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.csproj.CoreCompileInputs.cache
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.dll
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.pdb
+C:\Users\jjctj\Desktop\.Net\Proyecto_Escuela\Conocimientos\obj\Debug\netcoreapp3.1\Conocimientos.genruntimeconfig.cache

@@ -31,90 +31,31 @@ namespace CoreEscuela
 
         private void CargarEvaluaciones()
         {
-            Random rnd = new Random();
+            var lista = new List<Evaluación>();
             foreach (var curso in Escuela.Cursos)
             {
                 foreach (var asignatura in curso.Asignaturas)
                 {
-                    foreach (var alumno in curso.Alumno)
+                    foreach (var alumno in curso.Alumnos)
                     {
-                        var rmd = new Random(System.Environment.TickCount);
+                        var rnd = new Random(System.Environment.TickCount);
 
                         for (int i = 0; i < 5; i++)
                         {
                             var ev =
-                                new Evaluaciones {
+                                new Evaluación {
                                     Asignatura = asignatura,
                                     Nombre = $"{asignatura.Nombre} Ev#{i + 1}",
-                                    Nota = (float)(5 * rmd.NextDouble()),
+                                    Nota = (float)(5 * rnd.NextDouble()),
                                     Alumno = alumno
                                 };
-
                             alumno.Evaluaciones.Add (ev);
-                            System
-                                .Console
-                                .WriteLine($@"Nombre: {
-                                    alumno.Nombre} Asignatura: {
-                                    asignatura.Nombre} Nota: {ev.Nota}");
                         }
-                        /*System
-                            .Console
-                            .WriteLine($@"Evaluaciones de la Asignatura de {
-                                alumno.Nombre}");*/
                     }
                 }
             }
         }
 
-        /*
-        private void CargarEvaluaciones()
-        {
-            foreach (var c in Escuela.Cursos)
-            {
-                Printer
-                    .DibujarTitulo($"Evaluaciones Por Curso y Asignatura {
-                        c.Nombre}");
-                foreach (var a in c.Asignaturas)
-                {
-                    List<Evaluacion> listaEvaluaciones = new List<Evaluacion>();
-
-                    for (int i = 0; i < 5; i++)
-                    {
-                        double number = GenerarNumeroAleatorio();
-                        Evaluacion eval =
-                            new Evaluacion {
-                                Nombre = $"Evaluación {a.Nombre} #{i}",
-                                Nota = number
-                            };
-                        listaEvaluaciones.Add (eval);
-                    }
-
-                    a.Evaluaciones = listaEvaluaciones;
-                    Console.WriteLine("===========================");
-                    Console
-                        .WriteLine($"Evaluaciones de la Asignatura de {
-                            a.Nombre}");
-                    foreach (var Evaluacion in a.Evaluaciones)
-                    {
-                        Console.WriteLine($"{Evaluacion.Nombre}");
-                    }
-                }
-
-                foreach (var al in c.Alumnos)
-                {
-                    double number = GenerarNumeroAleatorio();
-                    al.Evaluacion =
-                        new Evaluacion {
-                            Nombre = "Evaluación de Ingreso",
-                            Nota = number
-                        };
-                    Console
-                        .WriteLine($"{al.Nombre} Realizo la {
-                            al.Evaluacion.Nombre} y Obtuvo una nota de {
-                            al.Evaluacion.Nota}.0");
-                }
-            }
-        }*/
         /* Realizando un metodo para cargar asignaturas por cada curso*/
         private void CargarAsignaturas()
         {
@@ -132,7 +73,7 @@ namespace CoreEscuela
         }
 
         /* Generamos alumnos al azar de acuerdo a la lista */
-        private List<Alumnos> GenerarAlumnosAlAzar(int cantidad)
+        private List<Alumno> GenerarAlumnosAlAzar(int cantidad)
         {
             string[] nombre1 =
             {
@@ -171,7 +112,7 @@ namespace CoreEscuela
                 from n1 in nombre1
                 from n2 in nombre2
                 from a1 in apellido1
-                select new Alumnos { Nombre = $"{n1} {n2} {a1}" };
+                select new Alumno { Nombre = $"{n1} {n2} {a1}" };
 
             // se retorna una lista de alimnos de acurdo con su ID y una cantidad especifica
             return listaAlumnos
@@ -204,7 +145,7 @@ namespace CoreEscuela
             foreach (var c in Escuela.Cursos)
             {
                 int cantidadRandom = rnd.Next(5, 20);
-                c.Alumno = GenerarAlumnosAlAzar(cantidadRandom);
+                c.Alumnos = GenerarAlumnosAlAzar(cantidadRandom);
             }
         }
     }
