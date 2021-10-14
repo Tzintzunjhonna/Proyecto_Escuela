@@ -1,17 +1,15 @@
 using System;
 using System.Collections.Generic;
+using CoreEscuela.Entidades;
+
 namespace CoreEscuela.Entidades
 {
-    public class Curso
+    public class Curso : ObjetoEscuelaBase
     {
-        public  string UniqueId { get; private set; }
-        public string Nombre { get; set; }
+        public Tiposjornada Jornada { get; set; }
 
-        public Tiposjornada Jornada { get; set;}
+        public List<Asignatura> Asignaturas { get; set; }
 
-        public List<Asignatura> Asignaturas { get; set;}
-        public List<Alumno> Alumnos { get; set;}
-
-        public Curso() => UniqueId = Guid.NewGuid().ToString();
-    }  
+        public List<Alumno> Alumnos { get; set; }
+    }
 }

@@ -18,6 +18,8 @@ namespace Etapa1
             Printer.DibujarTitulo("Bienvenidos a la escuela"); // Estamos Imprimiendo un metodo de printer.cs
             Printer.Beep(10000, cantidad: 10); // Lanzamos un pitido (sonido) desde printer.cs
             ImprimirCursosEscuela(engine.Escuela);
+
+            //var obj = new ObjetoEscuelaBase();
         }
 
         private static void ImprimirCursosEscuela(Escuela escuela)

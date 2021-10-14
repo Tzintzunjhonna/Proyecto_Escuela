@@ -1,26 +1,13 @@
 /*Espacio de nombres*/
 using System.Collections.Generic;
 using System;
-
+using CoreEscuela.Entidades;
 
 namespace CoreEscuela.Entidades
 {
-    public class Escuela
+    public class Escuela: ObjetoEscuelaBase
     {
-        public string UniqueId {get; private set; } = Guid.NewGuid().ToString();
         string nombre;
-
-        public string Nombre
-        {
-            get
-            {
-                return "Copia:" + nombre;
-            }
-            set
-            {
-                nombre = value.ToUpper();
-            }
-        }
 
         public int AñoDeCreacion { get; set; }
 
